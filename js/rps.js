@@ -8,15 +8,31 @@ let tieScore = 0;
 let playerChoice = "";
 let cpuChoice = "";
 
-document.getElementById('rock').addEventListener('click', playGame(String("Rock")));
+document.getElementById('')
+document.getElementById('rock').addEventListener('click', function() {
+  playGame("Rock");
+});
 
-document.getElementById('paper').addEventListener('click', playGame(String("Paper")));
+document.getElementById("paper").addEventListener('click', function() {
+  playGame("Paper");
+});
 
-document.getElementById('scissors').addEventListener('click', playGame(String('Scissors')));
+document.getElementById('scissors').addEventListener('click', function() {
+  playGame("Scissors");
+});
 
+document.getElementById("scoreboard").innerHTML = playerScore + "-" + cpuScore + "-" + tieScore;
+function updateScoreboard(){
+  document.getElementById("scoreboard").innerHTML = playerScore + "-" + cpuScore + "-" + tieScore;
+}
 function getComputerChoice() {
  let a = Math.floor((Math.random()*3)+1);
  return choices[a];
+}
+
+function resetGame(){
+  playerChoice="";
+  cpuChoice="";
 }
 
 function playGame(choice) {
@@ -25,15 +41,16 @@ function playGame(choice) {
 
   if (cpuChoice === playerChoice) {
     tieScore++;
-    document.getElementById("scoreboard").innerHTML = "<p>Tie...but you're really a loser.</p>";
+    document.getElementById("score-msg").innerHTML = "Tie...but you're really a loser.";
     
   }
   else if (cpuChoice === "Rock" && playerChoice === "Scissors" || cpuChoice ==="Scissors" && playerChoice === "Paper" || cpuChoice === "Paper" && playerChoice === "Rock") {
     cpuScore++;
-    document.getElementById("scoreboard").innerHTML = "<p>Fuckin Loser!</p>";
+    document.getElementById("score-msg").innerHTML = "Fuckin Loser!";
   }
   else {
     playerScore++;
-    document.getElementById("scoreboard").innerHTML = "<p>Great job I guess...</p>";
+    document.getElementById("score-msg").innerHTML = "CPU CHOICE: " + cpuChoice + " PLAYER CHOICE: " + playerChoice +"Great job I guess...";
   }
+  updateScoreboard();
 }
