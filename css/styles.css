@@ -4,3 +4,55 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "SpaceMono Nerd Font Mono";
+  font-size: 1em;
+  color: rgb(1, 1, 85);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-hdr {
+
+}
+
+.btn-div {
+  display: flex;
+}
+h1 {
+  font-size: 4em;
+}
+button {
+  margin: 2em;
+  border-radius: 4em;
+  width: 7em;
+  height: 2em;
+  background-color:rgb(41, 178, 178);
+}
+
+button:hover {
+  background-color:rgb(30, 140, 140);
+}
+
+#rock {
+
+}
+
+#paper {
+  
+}
+
+#scissors {
+
+}

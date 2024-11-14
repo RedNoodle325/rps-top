@@ -1,2 +1,5 @@
-let d = new Date();
-document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+
+
