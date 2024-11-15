@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  align-items: center;
 }
 
 body {
@@ -13,6 +14,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 90vw;
+  margin:auto
 }
 
 
@@ -24,35 +27,76 @@ body {
 }
 
 .game-hdr {
-
+  font-size: 3em;
+  font-weight: light;
 }
 
 .btn-div {
   display: flex;
+  justify-content: center;
+  width: 80vw;
+  gap: 2em;
+  padding-top: 3em;
 }
-h1 {
-  font-size: 4em;
-}
+
 button {
-  margin: 2em;
-  border-radius: 4em;
-  width: 7em;
-  height: 2em;
+  border-radius: .5em;
+  font-size:2em;
   background-color:rgb(41, 178, 178);
+  height: 100px;
+  width: 250px;
 }
 
 button:hover {
   background-color:rgb(30, 140, 140);
 }
 
-#rock {
+#score-msg {
+  display: flex;
+  font-style:italic;
+  padding-bottom: .5em;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  width: 100vw;
+  margin:auto;
+  text-align: center;
+}
+div {
+  display: flex;
+}
+
+#scoreboard {
+  margin: auto; 
+  font-size: 2em;
+}
+
+.game-container2 {
+  display: flex;
+  width: 70vw;
+}
+
+#c-choice, #p-choice {
+  margin: auto;
+  font-size:1.24em;
 
 }
 
-#paper {
-  
+#computer, #player {
+  display: flex;
+  flex-direction: column;
+  font-size:1.5em;
+  height: 30vh;
+  width: 40vw;
+  justify-content: space-between;
+  align-self: flex-end;
 }
 
-#scissors {
+.text-center {
+  text-align: center;
+}
 
+.choice-hdr {
+  align-self: center;
+  font-size: 2em;
 }
