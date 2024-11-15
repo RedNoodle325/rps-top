@@ -1,3 +1,5 @@
+// ------------------------------------------ BROWSER VERSION ------------------------------------------
+
 // const choices = ["Rock", "Paper", "Scissors"]
 // const rock = document.getElementById("rock");
 // const paper = document.getElementById("paper");
@@ -56,6 +58,8 @@
 //   }
 //   updateScoreboard();
 // }
+
+// ------------------------------------------ CONSOLE VERSION ------------------------------------------
 
 const rps = ["Rock", "Paper", "Scissors"];
 let cpuChoice, playerChoice = "None";
