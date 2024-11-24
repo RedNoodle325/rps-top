@@ -17,7 +17,6 @@ const totalScore = document.querySelector(".totalScore");
 const playerCard = document.querySelector("#playerCard");
 const cpuCard = document.querySelector("#cpuCard");
 
-
 buttons.forEach((button) => {
   button.addEventListener("click", (event) => {
     playerChoice = event.target.getAttribute("data-choice");
@@ -29,7 +28,7 @@ buttons.forEach((button) => {
 // Play one round of the game
 function playRound(user, cpu) {
   let resultText;
-  cpuCard.classList.remove(    
+  cpuCard.classList.remove(
     "border-success",
     "border-danger",
     "border-warning",
@@ -59,7 +58,6 @@ function playRound(user, cpu) {
     // ADD EVENT LISTENERS
     playerCard.classList.add("border-danger", "text-danger");
     cpuCard.classList.add("border-success", "text-success");
-
   } else {
     playerScore++;
     cpuCard.classList.add("border-danger", "text-danger");
@@ -67,13 +65,12 @@ function playRound(user, cpu) {
     // ADD EVENT LISTENERS
   }
   totalScore.textContent = playerScore + " - " + cpuScore;
-  if ((cpuScore + playerScore) === 5) {
-    if (cpuScore > playerScore){
+  if (cpuScore + playerScore === 5) {
+    if (cpuScore > playerScore) {
       alert("Fuckin Loser.");
     } else {
       alert("YOU FUCKING WON YOU BEAUTIFUL BASTARD!");
     }
-    playerScore=0, cpuScore=0;
+    (playerScore = 0), (cpuScore = 0);
   }
 }
-
