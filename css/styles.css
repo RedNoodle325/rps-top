@@ -1,14 +1,19 @@
+.main-contain {
+  margin: 1em;
+}
+
 .main-contain > * {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
 img {
   height: 24px;
   width: 24px;
 }
 
 .playerContainer {
-  width: 100vw;
+  width: 75vw;
   height: 20vh;
 }
 
