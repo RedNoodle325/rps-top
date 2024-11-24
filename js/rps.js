@@ -53,7 +53,7 @@ function playRound(user, cpu) {
   } else if (
     (user === "ROCK" && cpu === "PAPER") ||
     (user === "PAPER" && cpu === "SCISSORS") ||
-    (user === "SCISSOR" && cpu === "ROCK")
+    (user === "SCISSORS" && cpu === "ROCK")
   ) {
     cpuScore++;
     // ADD EVENT LISTENERS
