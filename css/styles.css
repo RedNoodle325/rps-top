@@ -1,102 +1,47 @@
-html {
-  background-color: #edeef0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  align-items: center;
-}
-
 body {
-  font-family: "SpaceMono Nerd Font Mono";
-  font-size: 1em;
-  color: rgb(1, 1, 85);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 90vw;
-  margin:auto
-}
-
-
-.game-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.game-hdr {
-  font-size: 3em;
-  font-weight: light;
-}
-
-.btn-div {
-  display: flex;
-  justify-content: center;
-  width: 80vw;
-  gap: 2em;
-  padding-top: 3em;
-}
-
-button {
-  border-radius: .5em;
-  font-size:2em;
-  background-color:rgb(41, 178, 178);
-  height: 100px;
-  width: 250px;
-}
-
-button:hover {
-  background-color:rgb(30, 140, 140);
-}
-
-#score-msg {
-  display: flex;
-  font-style:italic;
-  padding-bottom: .5em;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
+  box-sizing: border-box;
   width: 100vw;
-  margin:auto;
-  text-align: center;
-}
-div {
-  display: flex;
-}
-
-#scoreboard {
-  margin: auto; 
-  font-size: 2em;
-}
-
-.game-container2 {
-  display: flex;
-  width: 70vw;
-}
-
-#c-choice, #p-choice {
+  background-color:rgb(233, 233, 233);
+  color:darkcyan;
   margin: auto;
-  font-size:1.24em;
-
+}
+.main-contain > * {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+img {
+  height: 24px;
+  width: 24px;
 }
 
-#computer, #player {
-  display: flex;
-  flex-direction: column;
-  font-size:1.5em;
-  height: 30vh;
-  width: 40vw;
-  justify-content: space-between;
-  align-self: flex-end;
+.playerContainer{
+  width: 100vw;
+  height: 20vh;
 }
 
-.text-center {
-  text-align: center;
+#playerCard, #cpuCard {
+  width: 15rem;
+  border-color: darkcyan;
+}
+.rpsTitle {
+  height: 10vh;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
 }
 
-.choice-hdr {
+.btn {
+  width: 10rem;
+}
+
+.btnGroup {
+  width:31rem;
   align-self: center;
-  font-size: 2em;
+  justify-content: center;
+  gap: .5em;
+}
+
+.scoreCard {
+  width: 31rem;
+  align-self: center;
 }
