@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
   </head>
-  <body>
-    <div class="main-contain shadow d-flex flex-column align-items-center">
+  <body class="d-flex">
+    <div class="main-contain shadow d-flex flex-column align-items-center justify-content-around">
       <div class="d-flex">
         <h1 class="rpsTitle d-flex mx-auto">ROCK PAPER SCISSORS</h1>
       </div>
-      <div class="playerContainer d-flex justify-content-center gap-3">
+      <div class="playerContainer align-items-center d-flex justify-content-around gap-3">
         <div id="playerCard" class="d-flex card justify-content-center bg-dark-subtle align-items-center fs-1 text-center border-4">
           Player
         </div>
@@ -33,7 +33,7 @@
         </button>
       </div>
       <div class="d-flex card scoreCard border-0 flex-column justify-content-around">
-        <h3 class="text-center fs-1">SCORE</h1>
+        <h3 class="text-center fs-1 fw-bolder">SCORE</h1>
         <p class="totalScore text-center fs-1">0 - 0</p>
       </div>
     </div>

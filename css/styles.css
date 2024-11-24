@@ -1,5 +1,6 @@
 .main-contain {
   margin: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .main-contain > * {
@@ -23,11 +24,13 @@ img {
   border-color: darkcyan;
   margin: 20px;
 }
+
 .rpsTitle {
   height: 10vh;
   align-items: center;
   width: 90vw;
   justify-content: center;
+  font-weight:bold;
 }
 
 .btn {
@@ -35,13 +38,12 @@ img {
 }
 
 .btnGroup {
-  width: 100vw;
   align-self: center;
   justify-content: center;
   gap: 0.5em;
 }
 
 .scoreCard {
-  width: 31rem;
+  width: 20rem;
   align-self: center;
 }
